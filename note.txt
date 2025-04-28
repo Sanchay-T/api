@@ -1,0 +1,6 @@
+docker build -t cyphersol-api .                                                     
+
+
+docker run --rm -p 7500:7500 --env-file backend/.env --name cypher-app cyphersol-api
+
+docker push san1729/cyphersol-api:latest                                            
